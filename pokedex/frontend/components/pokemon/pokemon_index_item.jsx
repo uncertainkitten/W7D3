@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const PokemonIndexItem = ({ poke }) => {
+const PokemonIndexItem = ({ poke }) => {
   return (
     <li>
-      <Link to="/pokemon/:pokemonId">
+      <Link to={`/pokemon/${poke.id}`}>
         <img src={poke.image_url} width="50"></img>
         <br/>
         {poke.name}
@@ -12,3 +12,5 @@ export const PokemonIndexItem = ({ poke }) => {
     </li>
   );
 };
+
+export default PokemonIndexItem
