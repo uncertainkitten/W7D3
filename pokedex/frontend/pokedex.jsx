@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore();
 
 
-  window.receiveAllPokemon = receiveAllPokemon;
-  window.fetchAllPokemon = fetchAllPokemon;
-  window.requestAllPokemon = requestAllPokemon;
-  window.selectAllPokemon = selectAllPokemon;
-  window.getState = store.getState;
-  window.dispatch = store.dispatch;
+  // window.receiveAllPokemon = receiveAllPokemon;
+  // window.fetchAllPokemon = fetchAllPokemon;
+  // window.requestAllPokemon = requestAllPokemon;
+  // window.selectAllPokemon = selectAllPokemon;
+  // window.getState = store.getState;
+  // window.dispatch = store.dispatch;
 
   ReactDOM.render(<Root store={store}/>, rootEl);
 });
