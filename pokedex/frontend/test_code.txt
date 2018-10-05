@@ -1,1 +1,2 @@
 
+        <p>Moves: {this.props.pokemon.moves.map(move => <span>move</span> )}</p>
